@@ -31,7 +31,6 @@ class App extends Component {
     return posts.reduce((result, post) => post.isLiked ? result + 1 : result, 0);
   }
 
-
   onChange = (id) => {
     this.setState(prevState => {
       const prevPosts = prevState.posts;
